@@ -1,0 +1,47 @@
+/* ======= frontend/src/main.css (COMPLETE CODE) ======= */
+
+/* 1. MANDATORY TAILWIND DIRECTIVES */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2. CUSTOM COMPONENT STYLES (@layer components) */
+/* These map the new aesthetic classes used throughout your .jsx files to Tailwind utilities. */
+
+@layer components {
+  /* Utility class for input fields: modern, rounded, focused style */
+  .form-input {
+    @apply w-full border border-gray-300 rounded-xl px-4 py-3 text-gray-800 
+    focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 shadow-sm mt-1;
+  }
+
+  /* Utility class for labels: consistent text styling */
+  .form-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  /* General card style for components (Dashboard/Forms/Reports/Feedback) */
+  /* This ensures components get a consistent background, padding, and elevation. */
+  .card {
+    @apply bg-white p-6 rounded-2xl shadow-xl border border-gray-100;
+  }
+
+  /* Small muted text for descriptions/hints */
+  .small-muted {
+    @apply text-xs text-gray-400;
+  }
+}
+
+/* 3. ADDITIONAL AESTHETIC TWEAKS (Optional, but recommended) */
+
+/* Global body font smoothing for cleaner text rendering on macOS/iOS */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for table borders when using border-separate and border-spacing-y-2 in ExpenseList */
+/* The transparent border prevents gaps between rows from showing background colors */
+.border-separate tr td {
+    border-color: transparent; 
+}

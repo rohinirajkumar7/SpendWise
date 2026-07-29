@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+easyocr
+pillow
+spacy
+python-dateutil
+scikit-learn
+joblib
+python-multipart
+numpy
+pandas

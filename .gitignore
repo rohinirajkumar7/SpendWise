@@ -1,0 +1,27 @@
+/node_modules
+*/node_modules
+ 
+# Environment variables
+.env
+*/.env
+ 
+# Build outputs
+/dist
+/build
+ 
+# Log files
+*.log
+ 
+copy_all_files.js
+ 
+all_code.txt
+commands.txt
+
+*.joblib
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
