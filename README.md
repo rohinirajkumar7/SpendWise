@@ -90,7 +90,6 @@ SpendWise/
 git clone https://github.com/yourusername/SpendWise.git
 cd smart-expense-tracker
 
-text
 
 ###  2. Backend Setup (Express)
 
