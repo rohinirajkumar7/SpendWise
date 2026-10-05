@@ -97,8 +97,6 @@ text
 cd backend
 npm install
 
-text
-
 Create a `.env` file:
 
 MONGO_URI=mongodb://localhost:27017/expense_tracker
@@ -106,40 +104,29 @@ JWT_SECRET=verysecretkey
 PORT=4000
 AI_SERVICE_URL=http://localhost:8001
 
-text
-
 Start server:
 
 npm start
 
-text
 
 ###  3. AI Service Setup (FastAPI)
 
 cd ../ai-service
 pip install -r requirements.txt
 
-text
-
 Download OCR models:
 
 python download_models.py
 
-text
-
 Run AI microservice:
 
 python service.py
-
-text
 
 ###  4. Frontend Setup (React + Vite)
 
 cd ../frontend
 npm install
 npm run dev
-
-text
 
 Frontend runs on http://localhost:5173
 
